@@ -231,3 +231,4 @@ var users=[
   }
 ];
 console.log(users);
+document.write("Visualiza el archivo JSON en la consola del navegador, desplegando el menú.");

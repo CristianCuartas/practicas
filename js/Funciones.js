@@ -4,8 +4,9 @@ function add(x,y){
 	return total;
 }
 var total=add(2,4);
-console.log(total);
-
+document.write(total);
+document.write('<br>');
+document.write('<br>');
 /*Ejemplo 2 de una función*/
 function add2(){
 
@@ -20,7 +21,7 @@ function add2(){
 }
 
 var m=add2(1,2,3,2,2);
-console.log(m);
+document.write(m);
 
 
 

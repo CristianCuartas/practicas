@@ -13,10 +13,14 @@ var obj={
 
 /* Acceso a atributos */
 
-console.log(obj["nombre"]);
-console.log(obj.detalles.color);
-console.log(obj.detalles.habitat);
-console.log(obj["detalles"]["color"]);
+document.write(obj["nombre"]);
+document.write('<br>');
+document.write(obj.detalles.color);
+document.write('<br>');
+document.write(obj.detalles.habitat);
+document.write('<br>');
+document.write(obj["detalles"]["color"]);
+document.write('<br>');
 
 /* Objeto prototipo */
 function Persona(apellido, edad, sexo) {
@@ -30,10 +34,18 @@ var P1= new Persona("Cuartas",18,"M");
 var P2= new Persona("Cortés", 15,"F");
 
 		  /* Acceder al objeto */
-console.log(P2[""]);
-console.log(P2[""]);
-console.log(P2[""]);
-
+document.write(P1["apellido"]);
+document.write(" - ");
+document.write(P1["edad"]);
+document.write(" - ");
+document.write(P1["sexo"]);
+document.write('<br>');
+document.write(P2["apellido"]);
+document.write(" - ");
+document.write(P2["edad"]);
+document.write(" - ");
+document.write(P2["sexo"]);
+document.write('<br>');
  		  /* Mostrar todas la propiedades con for / in */
 function mp(Objeto, nombreObjeto){
 	var resultado = "";
@@ -46,5 +58,6 @@ function mp(Objeto, nombreObjeto){
 }
 		/* Acceder a la funncion mp */
 
-console.log(mp(P1,"P1"));
-console.log(mp(P2,"P2"));	
+document.write(mp(P1,"P1"));
+document.write('<br>');
+document.write(mp(P2,"P2"));	
