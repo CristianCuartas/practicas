@@ -1,0 +1,77 @@
+body{
+
+	background-color:#D8D8D8; 
+		
+}
+h2{
+	font-family: sans-serif;
+	color: #A9A9F5;
+}
+hr {
+  height: 3px;
+  background-color: #A9A9F5;
+}
+#button{
+font-family: sans-serif;
+font-size: medium;
+font-weight: bold;
+border-width:4px;
+border-color: #A9A9F5;
+border-radius: 4px;
+width: 200px;
+height: 30px;
+background-color: #5882FA;
+margin-left: 50px;
+}
+
+
+.form-group{
+font-family: sans-serif;
+font-size: medium;
+font-weight: bold;
+}
+
+#txtCodigo{
+
+border-width:2px;
+border-color: #A9A9F5;
+border-radius: 4px;
+width: 300px;
+height: 30px;
+background-color: #E6E6E6;	
+
+}
+#txtUsuario{
+border-width:2px;
+border-color: #A9A9F5;
+border-radius: 4px;
+width: 300px;
+height: 30px;		
+background-color: #E6E6E6;	
+}
+#txtCumpleaños{
+border-width:2px;
+border-color: #A9A9F5;
+border-radius: 4px;
+width: 300px;
+height: 30px;
+background-color: #E6E6E6;	
+font-family: sans-serif;
+}
+#txtCiudad{
+border-width:2px;
+border-color: #A9A9F5;
+border-radius: 4px;
+width: 305px;
+height: 35px;
+background-color: #E6E6E6;	
+font-family: sans-serif;
+}
+#txtEmail{
+border-width:2px;
+border-color: #A9A9F5;
+border-radius: 4px;
+width: 300px;
+height: 30px;		
+background-color: #E6E6E6;	
+}
