@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/stylefor_index3.css" />
+  </head>
+  <h2>R E G I S T R A T E&nbsp &nbspA H O R A</h2>
+  <body>
+    <hr />
+    <br />
+    <form action="" method="post" class="form-control" id="trythis">
+      <div class="form-group">
+        <label for="txtUsuario">Nombre de usuario:</label> <br />
+        <input
+          value=""
+          type="text"
+          name="txtCodigo"
+          placeholder="Escribe tu nombre de usuario"
+        />
+      </div>
+      &nbsp; &nbsp;
+
+      <div class="form-group">
+        <label for="txtContraseña">Contraseña:</label><br />
+        <input
+          value=""
+          type="password"
+          name="txtContraseña"
+          placeholder="Digita tu contraseña"
+        />
+      </div>
+      &nbsp; &nbsp;
+
+      <div class="form-group">
+        <label for="txtCumpleaños">Fecha de nacimiento:</label><br />
+        <input type="date" value="" name="txtCumpleaños" />
+      </div>
+      &nbsp;&nbsp;
+
+      <div class="form-group">
+        <label for="txtEdad">Edad:</label><br />
+        <input type="Number" value="" name="txtEdad" />
+      </div>
+
+      &nbsp; &nbsp;
+      <div class="form-group">
+        <input type="radio"  name="sexo" value="Maculino" />Masculino
+        <input type="radio"  name="sexo" value="Femenino" /> Femenino
+        <input type="radio"  name="sexo" value="Otro" /> Otro
+      </div>
+      <br />
+      <br />
+      <div class="form-group">
+        <label for="txtCiudad">Ciudad:</label><br />
+        <input list="Ciudades" name="txtCiudad" />
+        <datalist id="Ciudades">
+          <option value="Bogota">Bogotá / Cundinamarca</option>
+          <option value="Medellin">Medellín / Antoquia</option>
+          <option value="Cali">Cali / Valle del Cauca</option>
+          <option value="Barranquilla">Barranquilla / Atlántico</option>
+          <option value="Cartagena">Cartagena de Indias / Bolívar</option>
+          <option value="Soledad">Soledad / Atlántico</option>
+          <option value="Cutuca">Cútuta / Norte de Santander</option>
+          <option value="Ibague">Ibagué / Tolima</option>
+          <option value="Bucaramanga">Bucaramanga / Santander</option>
+        </datalist>
+      </div>
+
+      &nbsp; &nbsp;
+      <div class="form-group">
+        <label for="txtEmail">Correo electrónico:</label><br />
+        <input
+          value=""
+          type="email"
+          name="txtEmail"
+          placeholder="Correo electrónico"
+        />
+      </div>
+      &nbsp; &nbsp;
+
+      <div class="form-group">
+        <label for="seeSerie">¿Quiéres ver Game Of Thrones?</label>
+        &nbsp; &nbsp;
+        <a 
+          title="Mi serie favorita"
+          href="https://www.hbogo.com.br/landing"
+          target="_blank"
+        >
+          <img src="/imagenes/got-png.png" alt="Mi serie favorita" id="got" />
+        </a>
+      </div>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+
+      <div class="form-group">
+        <label for="txtRange">¿Qué puntaje le das a GOT?:</label><br />
+        <input type="range" min="0" max="10" step="1" value="" name="txtRange"  />
+        
+      </div>
+
+      &nbsp; &nbsp;
+      <br />
+      <br />
+
+      <div class="form-group">
+        <label for="Color">Escoje un color: &nbsp;</label>
+        <input type="color"  value="#e6e6e6" name="Color"  /><br>
+        <p id="nameColor"></p>
+        
+      </div>    
+
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <div class="form-group">
+        <label for="txtTyC">Acepto términos y condiciones:</label> <br />
+
+        <input id="checkbox1" type="checkbox" onclick="check1(this)" value="true" name="TerminosyCondiciones"/> Si,
+        acepto. <br />
+        <input id="checkbox2" type="checkbox" onclick="check2(this)" value="false" name="TerminosyCondiciones" /> No
+        acepto.
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <button type="submit" value="GO" id="actionbutton" >GO</button>
+
+      <button type="reset" value="limpiar" id="resetbutton">LIMPIAR</button>
+    </form>
+    <br />
+    <hr />
+    <script type="text/javascript" src="scriptindex3.js"></script>
+  </body>
+</html>

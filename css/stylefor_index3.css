@@ -1,0 +1,138 @@
+body {
+  background-color: #d8d8d8;
+}
+h2 {
+  text-align: center;
+  font-family: sans-serif;
+  color: #a9a9f5;
+}
+hr {
+  height: 3px;
+  background-color: #a9a9f5;
+}
+#actionbutton {
+  font-family: sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  border-width: 4px;
+  border-color: #a9a9f5;
+  border-radius: 4px;
+  width: 200px;
+  height: 30px;
+  background-color: #5882fa;
+  margin-left: 450px;
+}
+#resetbutton {
+  font-family: sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  border-width: 4px;
+  border-color: #a9a9f5;
+  border-radius: 4px;
+  width: 200px;
+  height: 30px;
+  background-color: #5882fa;
+  margin-left: 50px;
+}
+p{
+  visibility: hidden;
+}
+.form-group {
+  font-family: sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+}
+
+[name="txtCodigo"] {
+  border-width: 2px;
+  border-color: #a9a9f5;
+  border-radius: 4px;
+  width: 300px;
+  height: 30px;
+  background-color: #e6e6e6;
+}
+[name="txtContraseña"] {
+  border-width: 2px;
+  border-color: #a9a9f5;
+  border-radius: 4px;
+  width: 300px;
+  height: 30px;
+  background-color: #e6e6e6;
+}
+[name="txtCumpleaños"] {
+  border-width: 2px;
+  border-color: #a9a9f5;
+  border-radius: 4px;
+  width: 300px;
+  height: 30px;
+  background-color: #e6e6e6;
+  font-family: sans-serif;
+}
+[name="txtEdad"] {
+  border-width: 2px;
+  border-color: #a9a9f5;
+  border-radius: 4px;
+  width: 55px;
+  height: 30px;
+  background-color: #e6e6e6;
+  font-family: sans-serif;
+  text-align: center;
+}
+[name="txtCiudad"] {
+  border-width: 2px;
+  border-color: #a9a9f5;
+  border-radius: 4px;
+  width: 305px;
+  height: 30px;
+  background-color: #e6e6e6;
+  font-family: sans-serif;
+}
+[name="txtEmail"] {
+  border-width: 2px;
+  border-color: #a9a9f5;
+  border-radius: 4px;
+  width: 300px;
+  height: 30px;
+  background-color: #e6e6e6;
+}
+
+input[type="range"] {
+  display: block;
+  width: 150px;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"],
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  background-color: #e6e6e6;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #a9a9f5;
+  border-radius: 50%;
+  margin-top: -7px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #a9a9f5;
+  height: 3px;
+}
+
+label[for="Color"] {
+  margin-left: 70px;
+}
+label[for="txtTyC"] {
+  margin-left: 40px;
+}
+#got {
+  width: 100px;
+  height: 30px;
+}
