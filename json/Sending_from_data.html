@@ -13,20 +13,20 @@
   <div class="user_info">
 
     <label for="dni_number">Numero de identificación</label>
-    <td><input type="text" name="dni" id="dni_number" value="1" /></td>
+    <td><input type="text" name="dni" id="dni_number" value="" required/></td>
 
     <label for="nombreyapellido">Nombre y Apellido</label>
-    <td><input type="text" name="full_name" value="Pedro Pérez" /></td>
+    <td><input type="text" name="full_name" value="" required/></td>
 
     <label for="contact_phone">Celular</label>
-    <td><input type="tel" name="contact_phone" value="633555555" /></td>
+    <td><input type="tel" name="contact_phone" value="" required/></td>
 
     <label for="email_address">Correo Electrónico</label>
-    <td><input type="email" name="email_address" value="uncorreo@mail.com" /></td>
+    <td><input type="email" name="email_address" value="" required /></td>
     <br>
 
     <button type="submit" value="Enviar" id="btnSend">Enviar</button>
-
+    <button type="reset" value="Limpiar campos">Limpiar</button>
   </div>
 </form>
 </body>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/stylefor_HTMLtoJSONindex2.css" />
+  </head>
+  <h2>R E G I S T R A T E&nbsp &nbspA H O R A</h2>
+  <body>
+    <hr />
+    <br />
+    <form action="" method="post" class="form-control" id="trythis">
+      <div class="form-group">
+        <label for="txtCodigo">Código:</label> <br />
+        <input
+          value=""
+          type="text"
+          name="txtCodigo"
+          placeholder="Dígita tú código"
+        />
+      </div>
+      <br />
+
+      <div class="form-group">
+        <label for="txtUsuario">Usuario:</label><br />
+        <input
+          value=""
+          type="text"
+          name="txtUsuario"
+          placeholder="Escribe tú nombre de usuario"
+        />
+      </div>
+
+      <br />
+      <div class="form-group">
+        <label for="txtCumpleaños">Fecha de nacimiento:</label><br />
+        <input type="date" value="" name="txtCumpleaños" />
+      </div>
+
+      <br />
+      <div class="form-group">
+        <label for="txtCiudad">Ciudad:</label><br />
+        <select name="listCiudades" name="txtCiudad">
+          <option value="" disabled selected>Selecciona tú ciudad</option>
+          <option value="Bogota">Bogotá / Cundinamarca</option>
+          <option value="Medellin">Medellín / Antoquia</option>
+          <option value="Cali">Cali / Valle del Cauca</option>
+          <option value="Barranquilla">Barranquilla / Atlántico</option>
+          <option value="Cartagena">Cartagena de Indias / Bolívar</option>
+          <option value="Soledad">Soledad / Atlántico</option>
+          <option value="Cutuca">Cútuta / Norte de Santander</option>
+          <option value="Ibague">Ibagué / Tolima</option>
+          <option value="Bucaramanga">Bucaramanga / Santander</option>
+        </select>
+      </div>
+
+      <br />
+      <div class="form-group">
+        <label for="txtEmail">Correo electrónico:</label><br />
+        <input
+          value=""
+          type="email"
+          name="txtEmail"
+          placeholder="Correo electrónico"
+        />
+      </div>
+      <br />
+      <br />
+      <button type="submit" value="GO" id="actionbutton">GO</button>
+      <br>
+      <button type="reset" value="limpiar" id="resetbutton">LIMPIAR</button>
+    </form>
+    <br />
+    <hr />
+    <script type="text/javascript" src="scriptindex2.js"></script>
+  </body>
+</html>

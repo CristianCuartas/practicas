@@ -1,110 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<h2>R E G I S T R A T E&nbsp &nbspA H O R A</h2>
-<body>
-<hr>
-<br>
-	<link rel="stylesheet" href="../css/stylefor_HTMLtoJSON.css">	
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <h2>R E G I S T R A T E&nbsp &nbspA H O R A</h2>
+  <body>
+    <hr />
+    <br />
 
-	<div class="contenedor">	
-	<form  class="form-control"  >
+    <link rel="stylesheet" href="../css/stylefor_HTMLtoJSONindex.css" />
+<script type="text/javascript" src="scriptindex.js"></script>
+    <form class="form-control">
+      <div class="form-group">
+        <label for="txtCodigo">Código:</label> <br />
+        <input
+          
+          type="text"
+          id="txtCodigo"
+          value=""
+          placeholder="Dígita tú código"
+        />
+        <!--onchange="HandleChangeCodigo()"-->
+        <br />
 
-		<div class="form-group">
-			<label for="txtCodigo">Código:</label> <br>
-			<input value="" type="text" class="form-control" id="txtCodigo" placeholder="Dígita tú código">
-			<!--onchange="HandleChangeCodigo()"-->
-		</div>
-<br>			
+        <label for="txtUsuario">Usuario:</label><br />
+        <input
+          
+          value=""
+          type="text"
+          id="txtUsuario"
+          placeholder="Escribe tú nombre de usuario"
+        />
+        <!--onchange="UserNameCodigo()"-->
+        <br />
 
-		<div class="form-group">
-			<label for="txtUsuario">Usuario:</label><br>
-			<input type="text" class="form-control" id="txtUsuario" placeholder="Escribe tú nombre de usuario" >
-			<!--onchange="UserNameCodigo()"-->
-		</div>
+        <label for="txtCumpleaños">Fecha de nacimiento:</label><br />
+        <input
+          
+          value=""
+          type="date"
+          id="txtCumpleaños"
+        />
+        <!--onchange="DateofBirth()"-->
 
-<br>	
-		<div class="form-group">
-			<label for="txtCumpleaños">Fecha de nacimiento:</label><br>
-			<input type="date" class="form-control" id="txtCumpleaños" >
-			 <!--onchange="DateofBirth()"-->
-		</div>
+        <br />
 
-<br>	
-		<div class="form-group">
-			<label for="txtCiudad">Ciudad:</label><br>
-			<select name="listCiudades" id="txtCiudad" >
-				<option value="" disabled selected>Selecciona tú ciudad</option>
-				<option value="Bogota">Bogotá / Cundinamarca</option>
-				<option value="Medellin">Medellín / Antoquia</option>
-				<option value="Cali">Cali / Valle del Cauca</option>
-				<option value="Barranquilla">Barranquilla / Atlántico</option>
-				<option value="Cartagena">Cartagena de Indias / Bolívar</option>
-				<option value="Soledad">Soledad / Atlántico</option>
-				<option value="Cutuca">Cútuta / Norte de Santander</option>
-				<option value="Ibague">Ibagué / Tolima</option>
-				<option value="Bucaramanga">Bucaramanga / Santander</option>
-			</select>
-			<!--onchange="CityCodigo()"-->
-			</div>
+        <label for="txtCiudad">Ciudad:</label><br />
+        <select  name="listCiudades" id="txtCiudad">
+          <option value="" disabled selected>Selecciona tú ciudad</option>
+          <option value="Bogota">Bogotá / Cundinamarca</option>
+          <option value="Medellin">Medellín / Antoquia</option>
+          <option value="Cali">Cali / Valle del Cauca</option>
+          <option value="Barranquilla">Barranquilla / Atlántico</option>
+          <option value="Cartagena">Cartagena de Indias / Bolívar</option>
+          <option value="Soledad">Soledad / Atlántico</option>
+          <option value="Cutuca">Cútuta / Norte de Santander</option>
+          <option value="Ibague">Ibagué / Tolima</option>
+          <option value="Bucaramanga">Bucaramanga / Santander</option>
+        </select>
+        <!--onchange="CityCodigo()"-->
 
-<br>	
-			<div class="form-group">
-				<label for="txtEmail">Correo electrónico:</label><br>
-				<input type="email" class="form-control" id="txtEmail" placeholder="Correo electrónico">
-				<!--onchange="EmailCodigo()"-->
-			</div>
-			<br>
-			<br>
-			<button type="button" value="GO" id="button">GO</button>
-	</form>
-	</div>
-	<br>
-	<hr>
-<script>
-	var addFriend= function (pcodigo, pusuario, pcumpleaños, pciudad,pemail){
-	var newFriend=[
+        <br />
+
+        <label for="txtEmail">Correo electrónico:</label><br />
+        <input
+         
+          value=""
+          type="email"
+          id="txtEmail"
+          placeholder="Correo electrónico"
+        />
+        <!--onchange="EmailCodigo()"-->
+
+        <br />
+        <br />
+        <button type="button" value="GO" id="actionbutton">GO</button>
+        <br />
+        <button type="reset" value="limpiar" id="actionbutton">LIMPIAR</button>
+      </div>
+    </form>
+    <br />
+    <hr />
+
+    <!--<script type="text/javascript">
 	
-		"NuevaPersona" : {
-	//  propiedad    : valor
-		"codigo"     : txtCodigo.value,
-		"usuario"    : txtUsuario.value,
-		"cumpleaños" : txtCumpleaños.value,
-		"ciudad"     : txtCiudad.value,
-		"email"      : txtEmail.value
-					    }
-				  ]};
-console.log(newFriend);
-</script>
-<!--<script type="text/javascript">
+      function HandleChangeCodigo() {
+        var Codigo = document.getElementById("txtCodigo").value;
+        console.log("Codigo:", Codigo);
+      }
+      function UserNameCodigo() {
+        var Usuario = document.getElementById("txtUsuario").value;
+        console.log("Usuario:", Usuario);
+      }
+      function DateofBirth() {
+        var FNacimiento = document.getElementById("txtCumpleaños").value;
+        console.log("Fecha de nacimiento:", FNacimiento);
+      }
+      function CityCodigo() {
+        var Ciudad = document.getElementById("txtCiudad").value;
+        console.log("Ciudad:", Ciudad);
+      }
+      function EmailCodigo() {
+        var CElectronico = document.getElementById("txtEmail").value;
+        console.log("Correo electónico:", CElectronico);
+	  }
+	  var sendInfo=[
+		  
+	  ]
+    </script>-->
 
+    <!--<script>
+      var addFriend = function(
+        pcodigo,
+        pusuario,
+        pcumpleaños,
+        pciudad,
+        pemail
+      ) {
+        var newFriend = {
+          //  propiedad    : valor
+          codigo: txtCodigo.value,
+          usuario: txtUsuario.value,
+          cumpleaños: txtCumpleaños.value,
+          ciudad: txtCiudad.value,
+          email: txtEmail.value
+		};
+		document.write(newFriend);
+	  };
+	  
+      
 
-		function HandleChangeCodigo(){
-			var Codigo = document.getElementById("txtCodigo").value;
-			console.log("Codigo:",Codigo);
-		}
-		function UserNameCodigo(){
-			var Usuario = document.getElementById("txtUsuario").value;
-			console.log("Usuario:",Usuario);
-		}
-		function DateofBirth(){
-			var FNacimiento = document.getElementById("txtCumpleaños").value;
-			console.log("Fecha de nacimiento:",FNacimiento);
-		}
-		function CityCodigo(){
-			var Ciudad = document.getElementById("txtCiudad").value;
-			console.log("Ciudad:",Ciudad);
-		}
-		function EmailCodigo(){
-			var CElectronico = document.getElementById("txtEmail").value;
-			console.log("Correo electónico:",CElectronico);
-		}
+      document.addEventListener("DOMContentLoaded", function(go) {
+        var trythis = document.getElementById("trythis");
 
-	</script>-->
-
-
-</body>
+        trythis.onsubmit = function(go) {
+          var sCodigo = document.querySelector("txtCodigo"),
+           	 sUsuario = document.querySelector("txtUsuario"),
+            sCumpleaños = document.querySelector("txtCumpleaños"),
+            sCiudad = document.querySelector("txtCiudad"),
+            sEmail = document.querySelector("txtEmail");
+          addFriend(sCodigo, sUsuario, sCumpleaños, sCiudad, sEmail);
+        };
+      });
+    </script>-->
+  </body>
 </html>
